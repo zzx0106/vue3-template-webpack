@@ -1,0 +1,463 @@
+.el-table thead {
+  th {
+    background: #eeecec;
+  }
+}
+.el-table th > .cell {
+  font-weight: bold;
+  color: #000;
+}
+
+// .el-popconfirm {
+//   .el-popconfirm__main {
+//     margin: 15px 0;
+//   }
+// }
+
+// .el-select-dropdown__item {
+//   &.selected {
+//     color: #337fea;
+//     font-weight: 700;
+//   }
+// }
+// .el-date-table {
+//   td {
+//     &.today span {
+//       color: #337fea;
+//     }
+//     &.start-date,
+//     &.end-date {
+//       span {
+//         background-color: #337fea;
+//       }
+//     }
+//   }
+//   // td.start-date span {
+//   //   background-color: #337fea;
+//   // }
+// }
+// .el-dialog__body {
+//   padding: 18px;
+//   // transition 引起的元素抖动问题修复，从根本解决问题，去掉el-dialog的transform元素
+//   // -webkit-backface-visibility: hidden;
+//   // -moz-backface-visibility: hidden;
+//   // -ms-backface-visibility: hidden;
+//   // backface-visibility: hidden;
+//   // -webkit-perspective: 1000;
+//   // -moz-perspective: 1000;
+//   // -ms-perspective: 1000;
+//   // perspective: 1000;
+
+//   // -webkit-font-smoothing: subpixel-antialiased;
+//   // -webkit-transform: translateZ(0) scale(1, 1);
+// }
+// .el-message-box__header {
+//   padding: 13px 0 0 0;
+//   height: 50px;
+//   box-sizing: border-box;
+//   text-align: center;
+//   .el-message-box__title {
+//     font-size: 18px;
+//     font-family: PingFangSC-Medium, PingFang SC;
+//     font-weight: 500;
+//     color: #211f1f;
+//   }
+//   .el-message-box__headerbtn {
+//     top: 13px;
+//   }
+// }
+// .el-dialog__header {
+//   padding: 0;
+//   height: 50px;
+//   line-height: 50px;
+//   border-bottom: 1px solid #e7e8eb;
+//   box-sizing: border-box;
+//   text-align: center;
+//   .el-dialog__title {
+//     font-size: 18px;
+//     font-family: PingFangSC-Medium, PingFang SC;
+//     font-weight: 500;
+//     color: #211f1f;
+//     line-height: 25px;
+//   }
+//   .el-dialog__headerbtn {
+//     top: 0px;
+//   }
+// }
+// .el-button.is-disabled {
+//   border: 1px solid #dcdee0;
+//   background-color: #f7f8fa !important;
+//   color: #c0c4cc;
+//   opacity: 1 !important;
+//   cursor: not-allowed;
+// }
+// .el-input.is-disabled .el-input__inner {
+//   color: #c0c4cc !important;
+//   background-color: #f7f8fa;
+//   border: 1px solid #dcdee0 !important;
+// }
+// .el-input.is-active .el-input__inner,
+// .el-input__inner:focus {
+//   border-color: #337fea;
+//   outline: 0;
+// }
+// .el-month-table td.today .cell {
+//   color: #337fea;
+// }
+// .el-month-table td.current:not(.disabled) .cell {
+//   color: #337fea;
+// }
+// .el-button--primary {
+//   background: #337fea !important;
+//   border: 1px solid #337fea !important;
+//   &:hover {
+//     background: #1256a4 !important;
+//     border: 1px solid #337fea !important;
+//   }
+//   &.is-disabled {
+//     background: #337fea !important;
+//     opacity: 0.35;
+//     border: 1px solid #337fea !important;
+//   }
+// }
+// .el-checkbox {
+//   .is-indeterminate {
+//     .el-checkbox__inner {
+//       background: #337fea;
+//       border-color: #337fea;
+//       &:hover {
+//         border-color: #337fea;
+//       }
+//     }
+//   }
+//   &.is-checked {
+//     .el-checkbox__label {
+//       color: #606266;
+//     }
+//     .el-checkbox__input {
+//       &.is-checked {
+//         .el-checkbox__inner {
+//           background: #337fea;
+//           border-color: #337fea;
+//           &:hover {
+//             border-color: #337fea;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// .el-dropdown-menu__item:focus,
+// .el-dropdown-menu__item:not(.is-disabled):hover {
+//   color: #337fea;
+// }
+// .el-radio__input {
+//   &.is-checked + .el-radio__label {
+//     color: #606266;
+//   }
+//   &.is-checked {
+//     .el-radio__inner {
+//       border-color: #337fea !important;
+//       background: #337fea !important;
+//     }
+//   }
+// }
+// .el-radio-button__inner {
+//   &:hover {
+//     color: #337fea;
+//   }
+// }
+// .el-radio-button__orig-radio:disabled + .el-radio-button__inner {
+//   border-color: #dcdee0;
+// }
+// .el-radio-button__orig-radio:checked + .el-radio-button__inner {
+//   background: #337fea;
+// }
+
+// .el-image-viewer__close {
+//   color: #fff;
+// }
+// .el-dialog__header {
+//   .el-dialog__close {
+//     font-size: 22px;
+//   }
+// }
+/* 弹窗居中 */
+// .el-dialog {
+//   display: flex;
+//   flex-direction: column;
+//   margin: 0 !important;
+//   // position: absolute;
+//   // top: 50%;
+//   // left: 50%;
+//   // transform: translate(-50%, -50%);
+//   /*height:600px;*/
+//   max-height: calc(100% - 30px);
+//   max-width: calc(100% - 30px);
+// }
+// .el-dialog__wrapper {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .el-dialog .el-dialog__body {
+//   flex: 1;
+//   overflow: auto;
+// }
+// .el-table-column--selection {
+//   &.is-leaf {
+//     .el-checkbox {
+//       margin-left: 4px;
+//     }
+//   }
+// }
+// base的移入
+// .el-tooltip__popper {
+//   background: rgba($color: #262a31, $alpha: 0.9) !important;
+//   max-width: 250px !important;
+//   font-size: 14px !important;
+//   font-family: SourceHanSansCN-Regular !important;
+//   line-height: 21px !important;
+//   color: #ffffff !important;
+// }
+// ::v-deep {
+// .el-input {
+//   &.el-input-group--append {
+//     .el-input__inner {
+//       border-right: none;
+//     }
+//   }
+//   &.el-input-group--prepend {
+//     .el-input__inner {
+//       border-left: none;
+//     }
+//   }
+//   .el-input-group__prepend {
+//     font-size: 14px;
+//     font-weight: 400;
+//     color: #333334;
+//     background-color: transparent;
+//     padding: 0 8px;
+//     border-right: none !important;
+//   }
+//   .el-input-group__append {
+//     font-size: 14px;
+//     font-weight: 400;
+//     color: #333334;
+//     background-color: transparent;
+//     padding: 0 8px;
+//     border-left: none !important;
+//   }
+//   &.is-disabled {
+//     .el-input-group__prepend,
+//     .el-input-group__append {
+//       color: #c0c4cc !important;
+//       background-color: #f5f7fa !important;
+//     }
+//   }
+// }
+// .el-form {
+//   .el-form-item__content {
+//     line-height: 36px;
+//   }
+//   .flex-right {
+//     width: 100%;
+//     .el-form-item__content {
+//       display: flex;
+//       width: 100%;
+//       flex-wrap: nowrap;
+//       align-items: center;
+//       justify-content: flex-end;
+//       flex-wrap: nowrap;
+//     }
+//   }
+//   .flex-center {
+//     width: 100%;
+//     .el-form-item__content {
+//       display: flex;
+//       width: 100%;
+//       flex-wrap: nowrap;
+//       align-items: center;
+//       justify-content: center;
+//       flex-wrap: nowrap;
+//     }
+//   }
+//   .el-form-item {
+//     text-align: left;
+//     margin-bottom: 23px;
+//     .el-col {
+//       margin-right: 10px;
+//     }
+//     .el-form-item__label {
+//       line-height: 14px;
+//       padding-bottom: 15px;
+//     }
+//   }
+// }
+// .el-dialog {
+//   .el-dialog__wrapper {
+//     .el-dialog {
+//       border-radius: 4px;
+//       .el-dialog__header {
+//         padding: 13px 0 0 0;
+//         height: 50px;
+//         border-bottom: 1px solid #e7e8eb;
+//         box-sizing: border-box;
+//         text-align: center;
+//         .el-dialog__title {
+//           font-size: 18px;
+//           font-family: PingFangSC-Medium, PingFang SC;
+//           font-weight: 500;
+//           color: #211f1f;
+//         }
+//         .el-dialog__headerbtn {
+//           top: 13px;
+//         }
+//       }
+//       .el-dialog__body {
+//         padding: 30px 15px 0px 15px;
+//         overflow: hidden;
+//       }
+//     }
+//   }
+// }
+// .el-message-box {
+//   .el-message-box__btns {
+//     .el-button--primary {
+//       background: #337fea !important;
+//     }
+//   }
+// }
+// .el-tabs {
+//   .el-tabs__active-bar {
+//     background: #337fea;
+//     height: 3px;
+//   }
+//   .el-tabs__item {
+//     min-width: 80px;
+//     text-align: center;
+//     height: 50px;
+//     line-height: 50px;
+//     font-size: 14px;
+//     font-family: Source Han Sans CN;
+//     font-weight: 500;
+//     color: #aaaaaa;
+//     &.is-active {
+//       font-weight: bold;
+//       color: #262a31;
+//     }
+//   }
+// }
+// .el-table {
+//   height: 100% !important;
+//   flex: 1;
+//   box-sizing: border-box;
+//   &::before {
+//     height: 0;
+//   }
+//   .el-table__body {
+//     padding-bottom: 50px;
+//   }
+//   .el-table__header-wrapper table,
+//   .el-table__body-wrapper table {
+//     // width: 100% !important;
+//   }
+//   .el-table__body-wrapper {
+//     // padding-bottom: 60px;
+//   }
+//   .el-table__body,
+//   .el-table__footer,
+//   .el-table__header {
+//     table-layout: auto;
+//   }
+// tr {
+//   th {
+//     height: 50px;
+//     background: #f0f0f0;
+//     > .cell {
+//       font-size: 14px;
+//       font-family: Source Han Sans CN;
+//       font-weight: 500;
+//       color: #262a31;
+//       opacity: 1;
+//       .th-item {
+//         display: flex;
+//         align-items: center;
+//         cursor: pointer;
+//         > span {
+//           font-size: 14px;
+//           font-family: Source Han Sans CN;
+//           font-weight: 500;
+//           color: #262a31;
+//           opacity: 1;
+//           margin-right: 4px;
+//         }
+//         > img {
+//           height: 14px;
+//           width: 9px;
+//         }
+//       }
+//     }
+//   }
+//   td {
+//     box-sizing: border-box;
+//     padding: 0;
+//     height: 60px;
+//     overflow: hidden;
+//     .cell {
+//       font-size: 14px;
+//       font-family: SourceHanSansCN-Regular;
+//       color: #262a31;
+//     }
+//     .table-popover {
+//       font-size: 14px;
+//       word-break: break-word;
+//       text-overflow: ellipsis;
+//       overflow: hidden;
+//       display: -webkit-box;
+//       -webkit-line-clamp: 2;
+//       -webkit-box-orient: vertical;
+//     }
+//   }
+//   &.el-table__row {
+//     background: #ffffff;
+//     &.el-table__row--striped {
+//       background: #f8f9fb;
+//       td {
+//         background: #f8f9fb;
+//       }
+//     }
+//   }
+// }
+
+// .el-upload-list__item {
+//   // 去掉 按delete键可以删除 提示
+//   .el-icon-close-tip {
+//     display: none !important;
+//   }
+// }
+
+// .el-icon-arrow-down {
+//   transition: transform 0.3s;
+//   font-size: 14px;
+// }
+// .el-cascader-menu__wrap .el-scrollbar__wrap {
+//   overflow: hidden scroll !important;
+// }
+// .el-cascader-panel {
+//   height: 204px; // 这里不能
+// }
+// .el-image-viewer__wrapper {
+//   z-index: 9999 !important;
+// }
+// .el-select-dropdown {
+//   .el-scrollbar {
+//     .el-select-dropdown__wrap {
+//       .el-select-dropdown__item {
+//         &.selected {
+//           color: #337fea;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,10 @@
+// 存放变量以及混合，禁止存放普通样式
+
+@mixin maxLine($line: 2) {
+  word-break: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}

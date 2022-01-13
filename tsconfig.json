@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // 是否允许在ts文件中引入js
+    "allowSyntheticDefaultImports": true, // 允许从没有默认导出的模块进行默认导入
+    "esModuleInterop": true, // 禁用命名空间引用 (import * as fs from "fs") 启用 CJS/AMD/UMD 风格引用 (import fs from "fs")
+    "experimentalDecorators": true, // 启用对ES装饰器的实验性支持
+    "forceConsistentCasingInFileNames": false, // 不允许对同一个文件使用不一致格式的引用
+    "jsx": "preserve",
+    "importHelpers": true,
+    "module": "esnext", // 指定模块代码生成
+    "moduleResolution": "node", // 使用 Node.js 风格解析模块
+    "noEmit": true, // 不输出(意思是不编译代码，只执行类型检查)
+    // "noImplicitThis": false, // false 函数体内使用this，不需要定义 会导致读不到this， 这里需要注释
+    "noUnusedLocals": false, // 报告未使用的“本地变量”的错误
+    "noUnusedParameters": false, // 报告未使用“参数”的错误
+    "noFallthroughCasesInSwitch": true, // 报告switch语句的fallthrough错误。（即，不允许switch的case语句贯穿）
+    "resolveJsonModule": true, // 允许使用 .json 扩展名导入的模块
+    "skipLibCheck": true, // 跳过所有声明文件的类型检查
+    "strict": true, // 启用所有严格类型检查选项
+    "typeRoots": ["./node_modules/@types/", "./types"],
+    "sourceMap": true, // 生成相应的.map文件
+    "target": "esnext", // 指定 ECMAScript 目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'
+    "lib": [
+      "dom", //dom运行环境
+      "dom.iterable", //迭代器运行环境
+      "esnext" //es6转化成es5的环境
+    ],
+    "types": ["webpack-env"],
+    "baseUrl": "./",
+    "rootDir": "./",
+    "paths": {
+      // 如果新增paths 需要重启编辑器才行
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts", //
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts"
+  ],
+  "exclude": ["node_modules", "build", "dist", "public", "src/lib"]
+}

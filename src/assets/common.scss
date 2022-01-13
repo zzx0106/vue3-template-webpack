@@ -1,0 +1,20 @@
+// 用于存放公共样式
+.view-header {
+  width: 100%;
+}
+.view-body {
+  display: flex;
+  height: 100%;
+}
+.view-body-main {
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  overflow: scroll;
+}
+.view-pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0;
+}

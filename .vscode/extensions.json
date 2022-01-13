@@ -1,0 +1,30 @@
+/**
+window:
+ctrl + shift + p
+mac:
+command + shift + p
+输入：
+Show Recommended Extensions
+安装所有依赖
+*/
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag", // tag自动闭合
+    "coenraads.bracket-pair-colorizer-2",
+    "dsznajder.es7-react-js-snippets", // react代码提示
+    "equimper.react-native-react-redux", // react代码提示
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens", // git 显示修改
+    "ecmel.vscode-html-css", //
+    "kisstkondoros.vscode-gutter-preview", // 图片预览
+    "zignd.html-css-class-completion", // dom标签class与css的class关联
+    "xabikos.javascriptsnippets", // esnext 提示
+    "christian-kohler.path-intellisense", // 路径提示
+    "esbenp.prettier-vscode", // 代码格式化
+    "wayou.vscode-todo-highlight", // TODO高亮
+    "gruntfuggly.todo-tree", // TODO树状图
+    "octref.vetur", // TODO树状图
+    "shenjiaolong.vue-helper", // vue
+    "chandzhang.wechat-snippet" // 小程序语法提示
+  ]
+}

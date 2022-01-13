@@ -1,0 +1,459 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+
+a {
+  color: #7e8c8d;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+//  ::-webkit-scrollbar {
+//    width: 5px;
+//    height: 5px;
+//  }
+
+//  ::-webkit-scrollbar-track-piece {
+//    background-color: rgba(0, 0, 0, 0.2);
+//    -webkit-border-radius: 6px;
+//  }
+
+//  ::-webkit-scrollbar-thumb:vertical {
+//    height: 5px;
+//    background-color: rgba(125, 125, 125, 0.7);
+//    -webkit-border-radius: 6px;
+//  }
+
+//  ::-webkit-scrollbar-thumb:horizontal {
+//    width: 5px;
+//    background-color: rgba(125, 125, 125, 0.7);
+//    -webkit-border-radius: 6px;
+//  }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// 为应对以下错误，如果该字段会影响正常使用，那么注释掉也不会有任何影响
+// Unable to preventDefault inside passive event listener due to target being treated as passive.
+// See https://www.chromestatus.com/features/5093566007214080
+// * {
+//     touch-action: pan-y;
+//   }
+
+/*设置IOS页面长按不可复制粘贴，但是IOS上出现input、textarea不能输入，因此将使用-webkit-user-select:auto;*/
+* {
+  // -webkit-touch-callout: none; /*系统默认菜单被禁用*/
+  // -webkit-user-select: none; /*webkit浏览器*/
+  // -khtml-user-select: none; /*早期浏览器*/
+  // -moz-user-select: none; /*火狐*/
+  // -ms-user-select: none; /*IE10*/
+  // user-select: none;
+}
+input,
+textarea {
+  -webkit-user-select: auto; /*webkit浏览器*/
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+input:disabled {
+  background: transparent;
+}
+// input[disabled] {
+//   color: #2a2a2aff;
+//   opacity: 1;
+// }
+
+input:disabled {
+  // color: #2a2a2a;
+  // -webkit-text-fill-color: #2a2a2a;
+  -webkit-opacity: 1; // ios下 默认是0.3
+  opacity: 1;
+}
+
+img[src=''],
+img:not([src]) {
+  opacity: 0;
+}
+.anchorBL {
+  // display: none;
+}
+// ios上传的弹窗问题
+img {
+  pointer-events: auto; // https://blog.csdn.net/qq_37600506/article/details/99487744
+  -webkit-touch-callout: none;
+}
+body > a[title='站长统计'] {
+  display: none;
+}
+// Suppress the focus outline on elements that cannot be accessed via keyboard.
+// This prevents an unwanted focus outline from appearing around elements that
+// might still respond to pointer events.
+//
+// Credit: https://github.com/suitcss/base
+[tabindex='-1']:focus {
+  outline: none !important;
+}
+// Content grouping
+//
+// 1. Add the correct box sizing in Firefox.
+// 2. Show the overflow in Edge and IE.
+
+hr {
+  box-sizing: content-box; // 1
+  height: 0; // 1
+  overflow: visible; // 2
+}
+// Abbreviations
+//
+// 1. remove the bottom border in Firefox 39-.
+// 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+// 3. Add explicit cursor to indicate changed behavior.
+// 4. Duplicate behavior to the data-* attribute for our tooltip plugin
+
+abbr[title],
+abbr[data-original-title] {
+  // 4
+  text-decoration: underline; // 2
+  text-decoration: underline dotted; // 2
+  border-bottom: 0; // 1
+  cursor: help; // 3
+}
+input[type='text'],
+input[type='password'],
+input[type='number'],
+textarea {
+  -webkit-appearance: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+}
+th {
+  // Matches default `<td>` alignment by inheriting from the `<body>`, or the
+  // closest parent with a set `text-align`.
+  text-align: inherit;
+}
+
+//
+// Forms
+//
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0; // remove the margin in Firefox and Safari
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible; // Show the overflow in Edge
+}
+
+button,
+select {
+  text-transform: none; // remove the inheritance of text transform in Firefox
+}
+
+// remove inner border and padding from Firefox, but don't restore the outline like Normalize.
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  box-sizing: border-box; // 1. Add the correct box sizing in IE 10-
+  padding: 0; // 2. remove the padding in IE 10-
+}
+
+input[type='date'],
+input[type='time'],
+input[type='datetime-local'],
+input[type='month'] {
+  // remove the default appearance of temporal inputs to avoid a Mobile Safari
+  // bug where setting a custom line-height prevents text from being vertically
+  // centered within the input.
+  // See https://bugs.webkit.org/show_bug.cgi?id=139848
+  // and https://github.com/twbs/bootstrap/issues/11266
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  overflow: auto; // remove the default vertical scrollbar in IE.
+  // Textareas should really only resize vertically so they don't break their (horizontal) containers.
+  resize: vertical;
+}
+
+fieldset {
+  // Browsers set a default `min-width: min-content;` on fieldsets,
+  // unlike e.g. `<div>`s, which have `min-width: 0;` by default.
+  // So we reset that to ensure fieldsets behave more like a standard block element.
+  // See https://github.com/twbs/bootstrap/issues/12359
+  // and https://html.spec.whatwg.org/multipage/#the-fieldset-and-legend-elements
+  min-width: 0;
+  margin: 0;
+  // Reset the default outline behavior of fieldsets so they don't affect page layout.
+  padding: 0;
+  border: 0;
+}
+
+// Correct the cursor style of incement and decement buttons in Chrome.
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type='search'] {
+  // This overrides the extra rounded corners on search inputs in iOS so that our
+  // `.form-control` class can properly style them. Note that this cannot simply
+  // be added to `.form-control` as it's not specific enough. For details, see
+  // https://github.com/twbs/bootstrap/issues/11586.
+  outline-offset: -2px; // 2. Correct the outline style in Safari.
+  -webkit-appearance: none;
+}
+
+//
+// remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+//
+
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+//
+// 1. Correct the inability to style clickable types in iOS and Safari.
+// 2. Change font properties to `inherit` in Safari.
+//
+
+::-webkit-file-upload-button {
+  font: inherit; // 2
+  -webkit-appearance: button; // 1
+}
+
+//
+// Correct element displays
+//
+
+output {
+  display: inline-block;
+}
+
+summary {
+  display: list-item; // Add the correct display in all browsers
+}
+
+template {
+  display: none; // Add the correct display in IE
+}
+
+// Always hide an element with the `hidden` HTML attribute (from PureCSS).
+// Needed for proper display in IE 10-.
+[hidden] {
+  display: none !important;
+}
+// https://www.w3cplus.com/mobile/vw-layout-in-vue.html
+// postcss-viewport-units
+// content也会引起一定的副作用。比如img和伪元素::before(:before)或::after（:after）。在img中content会引起部分浏览器下，图片不会显示。这个时候需要全局添加
+img {
+  content: normal !important;
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+.small-scroll {
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #263e4a;
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: #263e4a;
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #263e4a;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #263e4a;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #263e4a;
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  &::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+  }
+
+  /*定义滚动条轨道 内阴影+圆角*/
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+  }
+
+  /*定义滑块 内阴影+圆角*/
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+  }
+}
